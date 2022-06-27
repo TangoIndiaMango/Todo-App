@@ -1,0 +1,48 @@
+body {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-text-color: pink;
+}
+
+.container {
+    margin: auto;
+    width: 60%;
+}
+
+h1 {
+    color: var(--main-text-color);
+    text-align: center;
+    font-size: 3em;
+}
+
+.input-group {
+    margin: 30px;
+    text-align: center;
+
+}
+
+.todo-list {
+    background-color: antiquewhite;
+    height: 120px;
+    
+}
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(211, 197, 197);
+    padding: 12px;
+    font-size: 1.2em
+}
+
+.todo-item {
+    
+}
+
+.todo-action {
+    display: flex;
+    flex-wrap: wrap;
+}
+
