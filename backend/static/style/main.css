@@ -9,12 +9,7 @@ body {
 
 .container {
     margin: auto;
-<<<<<<< HEAD
-    width: 60%;
-    align-items: center;
-=======
-    width: 40%;
->>>>>>> 0028b107e3e82dbe966c44c59f5da30fae2b51ff
+    width: 50%;
 }
 
 h1 {
@@ -50,24 +45,25 @@ input[type=button] {
     width: 60px
 }
 
-.todo-list {
+/* .todo-list {
     background-color: antiquewhite;
     height: 120px;
     align-items: center;
-    
-}
+} */
 
 .todo {
     display: flex;
-    justify-content: space-around;
+    margin: 20px 0;
+    justify-content: space-between;
     background-color: rgb(211, 197, 197);
-    padding: 11px;
+    /* padding: 11px; */
     font-size: 14px;
-    flex-direction: row;
+    
     align-items: center;
 }
 
 .todo-item {
+    margin: 10px;
     
 }
 
@@ -77,18 +73,15 @@ input[type=button] {
     margin: 5px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
 }
 
-<<<<<<< HEAD
 a {
     text-decoration: none;
     color: black;
     border: 2px solid rgb(202, 198, 198);
     margin: 2px;
 }
-=======
+
 @media screen and (max-width: 786px) {
 
     .container {
@@ -97,4 +90,4 @@ a {
     }
     
 }
->>>>>>> 0028b107e3e82dbe966c44c59f5da30fae2b51ff
+
