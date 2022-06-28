@@ -12,46 +12,37 @@
         <h1>Todo App</h1>
     </header>
 
-    <main class="container">
-        <div class="input-group">
-            <form action="/todo">
-                <input type="text">
-                <input type="button" value="+">
-    
-            </form>
 
-        </div>
+    <form action="/todo", method = 'post'>
+        <main class="container">
+            <div class="input-group">
+                
+                    <input type="text" name="description" placeholder="Enter todo...">
+                    <button type="submit" >	&#8594</button>
+            </div>
+    </form>
 
        
+        {% for todo in todo_list %} 
+            <div class="todo-list">
+                <div class="todo">
+                    <div class="todo-item">
+                        <span>{{ todo.id }} | {{ todo.description }}</span>
+                    </div>
+                        {% if todo.complete != False %}
+                                <span> Completed</span>
+                        {% else %}
+                                <span>Not completed</span>
+                        {% endif %}
 
-        <div class="todo-list">
-            <div class="todo">
-                <div class="todo-item">
-                    <span>This is a todo</span>
-                </div>
-                <div class="todo-actions">
-                    <span>Delete</span>
-                    <span>Check</span>
-                </div>
-            </div>
+                    <div class="todo-actions">
+                        <a href="/update/{{ todo.id }}">Update</a>
 
-
-            <!-- {% for todo in todos %} -->
-            <div class="todo">
-                <!-- {{ todo.todo }} -->
-
-                <ul>
-                    <li>Get sonething done</li>
-                </ul>
+                        <a href="/">Delete</a>
+                    </div>    
                 
-                <!-- @TODO Add Delete -->
-
-            <!-- {% endfor %} -->
-
-
             </div>
-                
-        </div>
+        {% endfor %}        
 
     </main>
     
