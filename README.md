@@ -1,4 +1,7 @@
 # Todo App
+
+**Ongoing project**
+
 ## About the Stack
 
 A Todo application.
